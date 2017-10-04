@@ -8,6 +8,17 @@ This repo contains the implementation of [Show, Attend and Tell: Neural Image Ca
  - It first uses a convolutional neural network to extract a feature vector of the input image, and then uses a LSTM recurrent neural network to decode this feature vector into a natural language sentence.
  - A soft attention mechanism is incorporated to improve the quality of the caption.
 
+## Examples
+<div class="display: inline-block; float: left;">
+ <img src="/Example/4.jpg" width="436px" alt="Example 1">
+ <img src="/Example/3.jpg" width="436px" alt="Example 2">
+</div>
+</br></br>
+<div class="display: inline-block; float: left;">
+ <img src="/Example/5.jpg" height="450px" width="436px" alt="Example 3">
+ <img src="/Example/6.jpg" height="450px" width="436px" alt="Example 4">
+</div>
+
 ## References
 
 Borrowed most of the code from 
