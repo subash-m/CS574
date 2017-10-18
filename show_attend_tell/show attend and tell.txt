@@ -1,0 +1,33 @@
+-----------------This Readme file is for the model for Image Captioning using Attention Networks----------------
+
+Dependencies:	This code is written in python. To use it you will need:
+
+		i)	Python 2.7
+    		ii)	A relatively recent version of NumPy
+		iii)	tensorflow
+
+a)	Usage:
+	Dataset Used:	Flickr8k Dataset
+		     	Alongwith the Flickr8k Dataset there comes another data file which is having 5 reference sentences for every image. The file name is 				results_20130124.token. One entry for such type of file is:
+				
+				000268201_693b08cb0e.jpg#0	A child in a pink dress is climbing up a set of stairs in an entry way.
+				1000268201_693b08cb0e.jpg#1	A girl going into a wooden building.
+				1000268201_693b08cb0e.jpg#2	A little girl climbing into a wooden playhouse.
+				1000268201_693b08cb0e.jpg#3	A little girl climbing the stairs to her playhouse.
+				1000268201_693b08cb0e.jpg#4	A little girl in a pink dress going into a wooden cabin. 
+
+
+b)	To create the annotations file along with extracting the features we used the Oxford VGGnet:
+	1. Extract VGG conv5_3 features using make_flickr_dataset.py. This creates two files:
+		a. annontations.pickle (in dir ./data/annontations.pickle)
+		b. feats.npy		(in dir ./data/feats.npy)
+
+c)	Next we start to train the model Based on the features extracted from the 8000 images along with reference annotation file using the 
+			
+			train() in model_tensorflow.py
+
+d)	After training the model we then ran:
+	
+			test() in model_tensorflow.py
+
+Finally we started testing the images.
