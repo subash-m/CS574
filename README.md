@@ -34,6 +34,10 @@ Borrowed most of the code from
  
 ## Architecture
 
+| <img src="/Example/Arch.PNG" alt="Architecture"> |
+|:---:|
+| Architecture (Source -[Show, Attend and Tell](http://arxiv.org/abs/1502.03044)) |
+
 ## Dependencies
 
 This code is written in python
